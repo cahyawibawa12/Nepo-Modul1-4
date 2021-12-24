@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/v_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nama_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:text="Nama Lengkap" />
+
+                <EditText
+                    android:id="@+id/nama_edited"
+                    android:layout_width="252dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="80dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/kolom"
+                    android:ems="10"
+                    android:layout_below="@id/nama_edit"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tanggal_lahir_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:layout_below="@+id/nama_edited"
+                    android:text="Tanggal Lahir" />
+
+                <EditText
+                    android:id="@+id/tanggal_lahir_edited"
+                    android:layout_width="252dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="80dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/kolom"
+                    android:ems="10"
+                    android:layout_below="@id/tanggal_lahir_edit"
+                    android:inputType="textPersonName"/>
+
+                <TextView
+                    android:id="@+id/umur_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:layout_below="@+id/tanggal_lahir_edited"
+                    android:text="umur" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_umur"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/umur_edit"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:max="100"
+                    android:progress="3" />
+
+                <TextView
+                    android:id="@+id/jenis_kelamin_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:layout_below="@+id/seekBar_umur"
+                    android:text="jenis kelamin" />
+
+                <RadioGroup
+                    android:id="@+id/rgrup_kelamin"
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jenis_kelamin_edit"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radioButton_laki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Laki - Laki"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_perem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:id="@+id/group_pengalaman_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rgrup_kelamin">
+
+                    <TextView
+                        android:id="@+id/panitia_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="79dp"
+                        android:layout_marginRight="80dp"
+                        android:text="panitia"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/panitia_edited"
+                        android:layout_width="252dp"
+                        android:layout_height="39dp"
+                        android:layout_below="@id/panitia_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@drawable/kolom"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingStart="15dp" />
+
+                    <TextView
+                        android:id="@+id/pengalaman_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/panitia_edited"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="79dp"
+                        android:layout_marginRight="80dp"
+                        android:text="pengalaman"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1_edit"
+                        android:layout_width="124dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/pengalaman_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Keamanan" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2_edit"
+                        android:layout_width="124dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/checkBox1_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Dokumentasi" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3_edit"
+                        android:layout_width="123dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/checkBox2_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Acara" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4_edit"
+                        android:layout_width="123dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/checkBox3_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Rohani" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5_edit"
+                        android:layout_width="123dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/checkBox4_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Perlengkapan" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6_edit"
+                        android:layout_width="123dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/checkBox5_edit"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Kesekretariatan" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/group_pengalaman_edit"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="147dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="147dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#2371CD"
+                    android:text="Save edit"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnHapus"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnEdit"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="147dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="147dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#FF0808"
+                    android:text="Hapus"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

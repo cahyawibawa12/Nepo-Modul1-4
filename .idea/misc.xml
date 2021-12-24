@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.2203125" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.2203125" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.2203125" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_card.xml" value="0.25" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_cardform.xml" value="0.18" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_detail.xml" value="0.16077898550724637" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_detailform.xml" value="0.18070652173913043" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_form.xml" value="0.25" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_help.xml" value="0.1716485507246377" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_kegiatan.xml" value="0.12092391304347826" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_recycler.xml" value="0.18" />
+        <entry key="..\:/File Tugas/TUGAS KULIAH/PROGMOB LANJUT/Praktikum/NEPO/app/src/main/res/layout/activity_splash.xml" value="0.16077898550724637" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
